@@ -19,6 +19,5 @@ $url = $http = array(
               )
 );
 
-$jssocket = include __DIR__ . '/apps/photonchat/urls_jssocket.php';
 
-return array_merge($http, $jssocket);
+return array_merge($http);

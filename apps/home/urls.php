@@ -6,11 +6,11 @@
  */
 
 return array(array('regex' => '#^/$#',
-                   'view' => array('\helloworld\views\Views', 'index'),
-                   'name' => 'helloworld_index',
-                   ),
+                   'view' => array('\home\views\Views', 'index'),
+                   'name' => 'home_index',
+             ),
              array('regex' => '#^/(.*)$#',
-                   'view' => array('\helloworld\views\Views', 'you'),
-                   'name' => 'helloworld_you',
-                   ),
-             );
+                   'view' => array('\home\views\Views', 'you'),
+                   'name' => 'home_you',
+             ),
+);

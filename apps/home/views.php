@@ -26,7 +26,7 @@ class Views
     public function index($request, $match)
     {
 		$renderer = new template\Renderer(
-			'home/index.tpl', Conf::f('template_folders')
+			'index.tpl', Conf::f('template_folders')
 		);
 		
 		$context = new template\Context(array('user' => 'Photon User',
