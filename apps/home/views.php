@@ -20,7 +20,7 @@ use \photon\template;
 class Views
 {
     /**
-     * A very simple Hello World! view.
+     * Testing templates
      *
      */
     public function index($request, $match)
@@ -33,6 +33,10 @@ class Views
 		                                      'foo' => 'bar'));
 				  	
         return new \photon\http\Response($renderer->render($context));
+    }
+    
+    public function egloo() { 
+    	require_once ('/var/www/client/index.php');
     }
 
     /**
